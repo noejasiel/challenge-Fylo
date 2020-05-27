@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conteiner_header{
+    display: flex;
+    width: 100%;
+    align-items: center;    /* para alinear y que cada uno est-e en una orilla y asi no se rompe el amquetadlo*/
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 1;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+}
+/* para que no choque con mi header */
+section{
+    position: relative;
+    top: 100px;
+}
+/*  */
+.menu{
+    margin-right: 1em;
+    color: hsl(243, 87%, 12%);
+}
+.enlace_menu{
+    padding-left: 1em;
+    text-decoration: none;
+    color: black;
+    padding: .2em;
+    border-radius: 10px;
+}
+.enlace_menu:hover{
+    background-color: hsl(243, 87%, 12%);
+    color: #ffff;
+}
+/* le quite el padding para que no se me destruyeran los elementos antes de los 375px */
+a:first-child{
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
+}
+
+.img_header{
+    margin: 1.2em 1em;
+    height: 37px;
+    width: 120px;
+}
+/* inociamos con las fotos y texto */
+
+.img_section{
+    margin-top: 4.5em;
+    margin-bottom: 2em;
+
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    color: hsl(243, 87%, 12%);
+}
+/* parrafos alineados en general */
+.grl{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    color: hsl(243, 87%, 12%);
+}
+.center_btn{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding: 1em;
+}
+.inp{
+    width: 85%;
+    border: .3px solid black;
+    box-sizing: border-box;
+}
+.btn{
+    width: 85%;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+}
+
+.imp_but{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* segunda seccion */
+.img_2{
+    margin: 4em 0em;
+}
+.imp_arrow{
+    width: 100%;
+    display: flex;
+    margin-bottom: 4em;
+    justify-content: center;
+}
+/* fondo gris */
+.fondo_gris{
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 3em;
+}
+.inp_2{
+    border: none;
+    padding: 1em 2em;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    background-color: hsl(240, 75%, 98%);
+}
+.inp_2::placeholder{
+    color: hsl(170, 45%, 43%);
+}
+.img_arrow{
+    text-align: center;
+    margin-top: 100%: ;
+    height: 7vh;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    cursor: pointer;
+}
+
+/* testimonio */
+.testimonio{
+    width: 100%;
+}
+.divtestimonio{
+    width: 80%;
+    box-shadow: 4px 5px 1px -2px hsl(0, 0%, 75%);
+    border-radius: 15px;
+    margin: 1em auto;
+    margin-bottom: 3em;
+    background-color: #ffff;
+}
+.p_testimonio{
+    margin: auto auto;
+    padding: 2.5em 0;
+}
+p.pie{
+    text-align: justify;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    margin: auto 0;
+    font-weight: 400;
+}
+.founder{
+    font-weight: 300;
+}
+.imgtesti_pie{
+    display: flex;
+    align-items: flex-end;
+
+}
+.img_testimonio{
+    height: 4em;
+    border-radius: 50px;
+    margin: 1em .5em;
+}
+/* mi parte casi final 
+como utilice una ya casi echa solo toco cambiar background y añadir un padding*/
+.text_fin{
+    background-color: hsl(238, 22%, 44%);
+    padding: 2em 0;
+}
+/* footer */
+footer{
+    background-color: hsl(243, 87%, 12%);
+}
+.contacto{
+    width: 100%;
+    position: relative;
+}
+.logo_fin{
+    padding: 2em 1em;
+    padding-top: 4em;
+    margin-right: 5em;
+}
+.icn_tel{
+    width: 80%;
+    display: block;
+    padding: .7em 2em;
+    color: #fff;
+    font-size: ;
+}
+.let_icons{
+    display: inline-block;
+    width: 70%;
+    padding-left: 1em;
+}
+.extras{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+/* no me agaraba el apdding al primer elemento */
+.extras a:first-child{
+    padding-left: 2em;
+}
+.enlace_footer{
+   padding: .7em 2em;   
+   color: #fff;
+   text-decoration: none;
+}
+.enlace_footer:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* redes */
+.redes_sociales{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.red{
+    padding: 1em;
+    font-size: 30px;
+    color: #ffff;
+}
+
+@media (min-width: 1440px){
+    .pc{
+        display: flex;
+    }
+    .enlace_menu{
+        font-size: 24px;
+    }
+    .img_section{
+        width: 50%;
+    }
+    .text_img{
+        margin: auto 0;
+    }
+    h1{
+        padding-top: 1em;
+        font-weight: 700;
+        font-size: 37px;
+    }
+    .fondo_gris{
+        display: flex;
+    }
+    .img_2{
+        width: 50%;
+    }
+    .testi_btn{
+        margin: auto 0;
+    }
+    .text_fin{
+        display: flex;
+    }
+    .imp_but{
+        margin: auto 0;
+        display: inline-block;
+    }
+    .btn{
+        width: 30%;
+        margin: 0 60.28px;
+    }
+    footer{
+        display: flex;
+    }
+    .contacto i:last-child{
+        margin-bottom: 5em;
+    }
+    .extras a:first-child{
+        margin-top: 5em;
+    }
+    .logo_fin{
+        margin-right: 0;
+        margin-left: 3em;
+    }
+    .icn_tel{
+        padding: 1em 0;
+        margin-left: 3em;
+    }
+    .redes_sociales{
+        display: flex;
+        align-items: center;
+    }
+    .redes_sociales     .red{
+        cursor: pointer;
+    }
+    .enlace_menu{
+        margin: 0 3em;
+    }
+    .enlace_menu:hover{
+        padding: 2em 3em;
+
+    }
+}
